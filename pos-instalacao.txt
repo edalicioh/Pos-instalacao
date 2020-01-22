@@ -19,6 +19,8 @@ echo "#-- Instalação de Node"
 echo "#-- Instalação de Docker"
 /bin/bash InstalarDocker.txt
 
+
+
 echo '#-------Data de Final' >> log.txt
 date +%d/%m/%Y' '%H:%M:%S >> log.txt
 echo '' >> log.txt
