@@ -1,0 +1,2 @@
+sudo keycode 135 = semicolon colon >> ~/.Xmodmap
+sudo keycode 115 = Super_L  >> ~/.Xmodmap

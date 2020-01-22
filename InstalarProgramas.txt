@@ -1,0 +1,29 @@
+echo "#-- Instalação de Programas" >> log.txt
+echo "" >> log.txt
+
+# Instalação Git
+
+sudo apt install git -y
+echo "#--Git Instalado--#" >> log.txt
+git --version >> log.txt
+echo "" >> log.txt
+
+# Instalação Curl
+
+sudo apt install curl -y
+echo "#--Curl Instalado--#" >> log.txt
+curl --version >> log.txt
+echo "" >> log.txt
+
+# Instalação VSCode
+sudo snap install code --classic
+echo "#--VSCode Instalado--#" >> log.txt
+code -v >> log.txt
+echo "" >> log.txt
+
+# Instalação Google Chrome
+wget https://dl.google.com/linux/direct/google-chrome-stable_current_amd64.deb
+sudo dpkg -i google-chrome-stable_current_amd64.deb
+sudo rm google-chrome-stable_current_amd64.deb
+echo "#--Google Chrome Instalado--#" >> log.txt
+echo "" >> log.txt

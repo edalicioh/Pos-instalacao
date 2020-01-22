@@ -1,0 +1,27 @@
+# comando de pos-instalação de linux
+sudo rm log.txt
+
+echo '#-------Data de Inicio' >> log.txt
+date +%d/%m/%Y' '%H:%M:%S >> log.txt
+echo '' >> log.txt
+
+sudo apt update > /dev/null
+
+echo "#-- Instalação de Programas"
+/bin/bash InstalarProgramas.txt
+
+echo "#-- Instalação de PHP"
+/bin/bash InstalarPHP.txt
+
+echo "#-- Instalação de Node"
+/bin/bash InstalarNode.txt
+
+echo "#-- Instalação de Docker"
+/bin/bash InstalarDocker.txt
+
+echo '#-------Data de Final' >> log.txt
+date +%d/%m/%Y' '%H:%M:%S >> log.txt
+echo '' >> log.txt
+
+clear
+cat log.txt

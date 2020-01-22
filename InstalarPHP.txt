@@ -1,0 +1,19 @@
+echo "#-- Instalação de PHP" >> log.txt
+echo "" >> log.txt
+
+# Instalação do php completo
+
+sudo apt install php php-bcmath php-xml php-json php-mbstring php-common php-zip php-curl -y
+echo "#--PHP Instalado--#" >> log.txt
+php -v >> log.txt
+echo "" >> log.txt
+
+
+# PHP Composer 
+
+sudo apt-get install curl
+sudo curl -s https://getcomposer.org/installer | php
+sudo mv composer.phar /usr/local/bin/composer
+echo "#-- PHP Composer Instalado--#" >> log.txt
+composer selfupdate |& tee -a log.txt
+echo "" >> log.txt

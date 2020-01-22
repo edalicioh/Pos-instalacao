@@ -1,0 +1,12 @@
+echo "#-- Instalação de Node" >> log.txt
+echo "" >> log.txt
+
+# Instalação Node
+curl -sL https://deb.nodesource.com/setup_12.x | sudo bash -
+sudo apt install nodejs -y
+
+echo "#-- Node Instalado--#" >> log.txt
+node -v >> log.txt
+echo "#-- Npm Instalado--#" >> log.txt
+npm -v >> log.txt
+echo "" >> log.txt
