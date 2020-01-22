@@ -27,3 +27,12 @@ echo '' >> log.txt
 
 clear
 cat log.txt
+
+sudo apt install zsh -y
+sudo nano /etc/passwd
+chsh -s /bin/bash
+
+sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)" -y
+
+sudo nano ~/.zshrc
+# ZSH_THEME="awesomepanda"
