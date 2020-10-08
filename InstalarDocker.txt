@@ -33,6 +33,10 @@ sudo chmod +x /usr/local/bin/docker-compose
 sudo ln -sf /usr/local/bin/docker-compose /usr/bin/docker-compose
 
 
+sudo groupadd docker
+sudo usermod -aG docker $USER
+newgrp - docker
+
 echo "#--Docker Instalado--#" >> log.txt
 sudo docker -v >> log.txt
 
